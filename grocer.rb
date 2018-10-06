@@ -75,7 +75,6 @@ def checkout(cart, coupons)
     cart.each do |iteam, data|
       cart_total += ((data[:price]) * 0.9).round(1) * data[:count])
     end
-    cart_total
+   return  cart_total
   end
-end
 end
