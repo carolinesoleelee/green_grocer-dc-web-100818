@@ -72,7 +72,7 @@ def checkout(cart, coupons)
 
   if cart_total > 100
     cart_total = 0
-    cart.each do |iteam, data|
+    cart.each do |item, data|
       cart_total += ((data[:price] * 0.9).round(1) * data[:count])
     end
    return  cart_total
