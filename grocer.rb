@@ -79,4 +79,4 @@ def checkout(cart, coupons)
   end
 end
 
-puts checkout
+puts checkout(cart, coupons)
