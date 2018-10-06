@@ -75,6 +75,8 @@ def checkout(cart, coupons)
     cart.each do |item, data|
       cart_total += ((data[:price] * 0.9).round(1) * data[:count])
     end
+    return cart_total
+  else
    return  cart_total
   end
 end
